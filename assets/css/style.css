@@ -10,4 +10,38 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body style  */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header styling */
+header {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+}
+
+/* hero style  */
+
+.hero {
+    background-image: url(../assets/images/dan-hero.jpeg);
+    background-size: cover;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.tagline {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+/* footer style  */
+footer {
+    font-size: 12px;
 }
