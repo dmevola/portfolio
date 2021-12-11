@@ -140,7 +140,8 @@ margin: 10%;
 }
 
 .project-class-big{
-    margin: 10%;
+    margin: auto;
+    position:relative;
 
 }
 
@@ -148,9 +149,22 @@ margin: 10%;
 max-width: 100%;
 opacity: 80%;
 }
-.project-class-small{
-margin: 10%;
 
+.project-class-small{
+margin: auto;
+position: relative;
+}
+
+.project-class-small img {
+    max-width: 100%;
+    opacity: 80%;
+}
+
+.bottom-left{
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        font-size: 18px;
 }
 
 /* Contact */
