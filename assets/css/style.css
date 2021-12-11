@@ -82,11 +82,11 @@ header a {
     color:var(--primary-color);
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
-    margin: 10%;
-    padding: 5%;
+    flex: 1 1 auto;
+    margin: 5px;
+    padding: 60px;
     font-size: 30px;
-    border-right: medium solid var(--primary-color);
+    align-items: center;
 }
 
 .flex-row {
@@ -98,6 +98,7 @@ header a {
     display: flex;
     align-content: center;
     justify-content: space-between;
+    padding: 30px 0 30px 0;
 }
 
 .about-me p {
@@ -112,6 +113,7 @@ margin: 10%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    border-left: medium solid var(--primary-color);
 }
 
 
@@ -121,6 +123,7 @@ margin: 10%;
     display:flex;
     align-content: center;
     justify-content: space-between;
+    padding: 30px 0 30px 0;
 }
 
 .projects-group h2 {
@@ -133,15 +136,21 @@ margin: 10%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    border-left: medium solid var(--primary-color);
 }
 
 .project-class-big{
     margin: 10%;
-    flex: 0 0 2;
+
+}
+
+.project-class-big img {
+max-width: 100%;
+opacity: 80%;
 }
 .project-class-small{
 margin: 10%;
-flex: 0 0 1;
+
 }
 
 /* Contact */
