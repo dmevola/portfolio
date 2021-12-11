@@ -64,6 +64,7 @@ header a {
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .hero-tagline {
@@ -71,8 +72,79 @@ header a {
     color: var(--font-color);
     display:flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px;
+    margin: 3.5%;
+    border-radius: 10px;
 }
+
+/* sections styling */
+.section-title{
+    color:var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 10%;
+    padding: 5%;
+    font-size: 30px;
+    border-right: medium solid var(--primary-color);
+}
+
+.flex-row {
+    display: flex;
+}
+
+/* About Me */
+.about-me{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.about-me p {
+color: var(--primary-color);
+font-size: 20px;
+margin: 10%;
+}
+
+.bio {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Projects */
+.projects-group {
+    background-color: var(--secondary-color);
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.projects-group h2 {
+    color: var(--accent-color);
+}
+
+.project-details{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-class-big{
+    margin: 10%;
+    flex: 0 0 2;
+}
+.project-class-small{
+margin: 10%;
+flex: 0 0 1;
+}
+
+/* Contact */
 
 /* footer style  */
 footer {
