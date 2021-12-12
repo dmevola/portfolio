@@ -30,6 +30,7 @@ header {
 
 header h1 a {
     color:var(--font-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav {
@@ -47,6 +48,12 @@ header nav ul {
 header ul li a {
     color: var(--font-color);
     padding: 10px 15px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header ul li a:hover {
+    color:var(--accent-color);
+    text-shadow: none;
 }
 
 header a {
@@ -64,7 +71,8 @@ header a {
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
+    padding: 10%;
 }
 
 .hero-tagline {
@@ -75,6 +83,10 @@ header a {
     padding: 10px;
     margin: 3.5%;
     border-radius: 10px;
+}
+
+.hero-tagline span {
+    color: var(--accent-color);
 }
 
 /* sections styling */
@@ -136,6 +148,7 @@ margin: 10%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding: 10%;
     border-left: medium solid var(--primary-color);
 }
 
@@ -145,31 +158,74 @@ margin: 10%;
 
 }
 
+.project-details-small {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .project-class-big img {
 max-width: 100%;
 opacity: 80%;
+border-radius: 10px;
+}
+
+.project-class-big img:hover {
+    opacity:100%;
+    border: 5px solid var(--accent-color);
 }
 
 .project-class-small{
 margin: auto;
 position: relative;
+max-width: 50%;
 }
 
 .project-class-small img {
     max-width: 100%;
     opacity: 80%;
+    border-radius: 10px;
+}
+
+.project-class-small img:hover {
+    opacity:100%;
+    border: 5px solid var(--accent-color);
 }
 
 .bottom-left{
         position: absolute;
-        bottom: 8px;
-        left: 16px;
-        font-size: 18px;
+        bottom: 4px;
+        padding: 20px;
+        font-size: 25px;
+        background-color: var(--border-color);
+        color: var(--primary-color);
+        border-radius: 10px;
+        font-weight:bold;
+
 }
 
 /* Contact */
 
+.contact-info {
+    display:flex;
+    color: var(--primary-color);
+    padding: 30px 0 30px 0;
+}
+
+.contact-info-details {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 /* footer style  */
 footer {
+    display:flex;
+    align-content: center;
+    justify-content: center;
     background-color: var(--accent-color);
+    color: var(--font-color);
+    padding:2%;
 }
