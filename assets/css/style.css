@@ -200,6 +200,7 @@ max-width: 50%;
         color: var(--primary-color);
         border-radius: 10px;
         font-weight:bold;
+        opacity: 70%;
 
 }
 
@@ -228,4 +229,52 @@ footer {
     background-color: var(--accent-color);
     color: var(--font-color);
     padding:2%;
+}
+
+/* media queries begin  */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS  */
+@MEDIA SCREEN AND (MAX-WIDTH: 980PX) {
+    /* this will be applied on any screen smaller than 980px  */
+
+}
+
+    /* MEDIA QUERY FOR TABLETS AND SMALLER  */
+@media screen and (max-width: 768px) {
+    /* this will be applied on any screen between 768px and 575px  */
+    .projects-group {
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .project-details {
+        border-top:medium solid var(--primary-color);
+        border-left: none;
+    }
+    
+    .project-class-small{
+        max-width: 100%;
+    }
+    .about-me {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .bio {
+        border-left: none;
+        border-top: medium solid var(--primary-color);
+    }
+    
+    .contact-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-title {
+        justify-content: center;
+    }
+}
+    /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER  */
+@media screen and (max-width: 575px) {
+    /* this will be applied on any screen smaller than 575px  */
+
 }
